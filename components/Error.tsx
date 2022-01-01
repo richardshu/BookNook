@@ -10,7 +10,7 @@ function Error(props: any) {
     >
       <Box display="flex" flexDirection="column">
         <h1>Error: </h1>
-        <p>{props.error}</p>
+        <p>{props.message}</p>
       </Box>
     </Box>
   );
