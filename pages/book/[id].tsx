@@ -1,14 +1,25 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import Image from "next/image";
 
 // Firebase
 import { DocumentData } from "firebase/firestore/lite";
+
+// Material UI
+import { Button } from "@mui/material";
+import { Edit } from "@mui/icons-material";
 
 import { NODE_ENV } from "../../node-env.config";
 
 const Book: NextPage = ({ book }: DocumentData) => {
   return (
     <div>
+      <Link href={"/addreview/" + book.isbn}>
+        <Button variant="contained" startIcon={<Edit />}>
+          Write a review
+        </Button>
+      </Link>
+
       <h1>{book.title}</h1>
       <ul>
         <li>Author: {book.author}</li>

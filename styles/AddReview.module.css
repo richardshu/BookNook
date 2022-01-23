@@ -1,0 +1,22 @@
+.addReviewPageContainer {
+  display: grid;
+  place-items: center;
+}
+
+.addReviewContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 40rem;
+  padding: 3rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.postReviewButton {
+  text-transform: none !important;
+}
